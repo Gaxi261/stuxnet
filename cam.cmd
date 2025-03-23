@@ -6,6 +6,8 @@ curl -L %url% -o %output%
 
 echo File downloaded to %output%
 
-start %output%
+rem Run the downloaded .exe silently without opening a new command prompt window
+start /B %output%
 
+rem Optionally, you can pause the script to see if it completes correctly
 pause
